@@ -1,0 +1,18 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-white">gifsApp</h3>
+  <button class="btn btn-danger" (click)="eliminar()">
+    Eliminar
+  </button>
+  <hr class="text-white" />
+  <div class="list-group list-reset">
+    <button
+      (click)="buscar(historial)"
+      *ngFor="let historial of historico"
+      class="list-group-item list-group list-group-item-action"
+      #textBoton
+    >
+      {{ historial }}
+    </button>
+  </div>
+
+</div>
